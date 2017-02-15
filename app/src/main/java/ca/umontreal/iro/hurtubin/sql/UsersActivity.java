@@ -64,6 +64,8 @@ public class UsersActivity extends AppCompatActivity {
                 } else {
                     Toast.makeText(UsersActivity.this, "Aucune réservation prévue", Toast.LENGTH_SHORT).show();
                 }
+
+                c.close();
             }
         });
 

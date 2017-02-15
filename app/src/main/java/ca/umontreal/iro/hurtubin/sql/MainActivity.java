@@ -57,6 +57,8 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "Nombre d'utilisateurs : " + c.getCount(), Toast.LENGTH_SHORT).show();
                     Toast.makeText(getApplicationContext(), "ID inséré : " + insertedId, Toast.LENGTH_SHORT).show();
 
+                    c.close();
+
                 } catch(SQLiteConstraintException e) {
                     Toast.makeText(getApplicationContext(), "Impossible d'ajouter l'utilisateur : contrainte SQL non respectée", Toast.LENGTH_SHORT).show();
                 } catch (SQLiteException e) {
